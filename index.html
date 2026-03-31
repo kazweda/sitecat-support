@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SiteCat</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      background: #f8f9fa;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; letter-spacing: 0.05em; }
+    header p { margin-top: 8px; color: #aaa; font-size: 0.95rem; }
+    .notice {
+      background: #fff3cd;
+      border-left: 4px solid #e6a817;
+      padding: 16px 20px;
+      margin: 32px auto;
+      max-width: 760px;
+      border-radius: 4px;
+    }
+    .notice strong { color: #856404; }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    section { margin-bottom: 48px; }
+    h2 {
+      font-size: 1.3rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      color: #1a1a2e;
+    }
+    h2 .en { font-size: 0.85rem; font-weight: normal; color: #888; margin-left: 8px; }
+    h3 { font-size: 1rem; margin: 20px 0 8px; color: #444; }
+    p { margin-bottom: 12px; }
+    ul { padding-left: 1.4em; margin-bottom: 12px; }
+    li { margin-bottom: 4px; }
+    a { color: #0066cc; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+    .bilingual { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .bilingual .ja { border-right: 1px solid #e0e0e0; padding-right: 24px; }
+    .contact-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .contact-box p { margin-bottom: 6px; }
+    details {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-top: 16px;
+      background: #fff;
+    }
+    summary {
+      padding: 12px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #1a1a2e;
+      user-select: none;
+    }
+    summary:hover { background: #f0f0f0; border-radius: 6px; }
+    details[open] summary { border-bottom: 1px solid #ddd; border-radius: 6px 6px 0 0; }
+    .details-body {
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+    .details-body h3 { margin-top: 16px; }
+    .details-body h3:first-child { margin-top: 0; }
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      color: #888;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .bilingual { grid-template-columns: 1fr; }
+      .bilingual .ja { border-right: none; padding-right: 0; border-bottom: 1px solid #e0e0e0; padding-bottom: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SiteCat</h1>
+  <p>Website monitoring &amp; broken link detection for iOS</p>
+</header>
+
+<main>
+
+  <div class="notice">
+    <strong>サービス終了のお知らせ / Service Termination Notice：</strong><br>
+    SiteCat は 2026年3月29日をもってサービスを終了しました。ご利用いただいた皆様、誠にありがとうございました。<br>
+    <em>SiteCat has been discontinued as of March 29, 2026. We sincerely thank all users for their support.</em>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <h2>SiteCat とは <span class="en">/ About</span></h2>
+    <div class="bilingual">
+      <div class="ja">
+        <p>
+          SiteCat は、ウェブサイトの死活監視とリンク切れ検出を行う iOS 向けアプリです。
+          サイトマップを使ったリンクの自動収集・検証や、HTTP ステータスの確認などの機能を提供していました。
+        </p>
+        <ul>
+          <li>ウェブサイトのアップタイム監視（HTTP ステータスチェック）</li>
+          <li>リンク切れ検出（サイトマップベースのクロール）</li>
+          <li>マルチサイト管理</li>
+          <li>クラウドデータ同期（Firebase）</li>
+        </ul>
+      </div>
+      <div class="en">
+        <p>
+          SiteCat was an iOS app for website uptime monitoring and broken link detection.
+          It offered sitemap-based link crawling, HTTP status checks, and cloud data sync.
+        </p>
+        <ul>
+          <li>Website uptime monitoring (HTTP status checks)</li>
+          <li>Broken link detection (sitemap-based crawling)</li>
+          <li>Multi-site management</li>
+          <li>Cloud data sync (Firebase)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Termination -->
+  <section id="support">
+    <h2>サービス終了・データ削除 <span class="en">/ Service Termination &amp; Data Deletion</span></h2>
+    <div class="bilingual">
+      <div class="ja">
+        <p>
+          SiteCat は 2026年3月29日をもってサービスを終了し、App Store からの配信も停止しました。
+        </p>
+        <p>
+          サーバー上に保存されているすべてのユーザーデータは、<strong>2026年5月31日</strong>までに完全に削除されます。
+        </p>
+        <h3>早期削除をご希望の場合</h3>
+        <p>
+          それ以前にデータを削除ご希望の場合は、下記の連絡先までメールにてご連絡ください。
+        </p>
+        <p>
+          <strong>件名：</strong> <code>SiteCat Data Deletion Request</code><br>
+          SiteCat アカウントに登録されているメールアドレスを本文に記載してください。
+          削除完了後、返信にてご連絡します。
+        </p>
+      </div>
+      <div class="en">
+        <p>
+          SiteCat has been discontinued as of March 29, 2026 and removed from the App Store.
+        </p>
+        <p>
+          All user data stored on our servers will be permanently deleted by <strong>May 31, 2026</strong>.
+        </p>
+        <h3>Requesting Early Deletion</h3>
+        <p>
+          To request deletion before that date, please contact us by email (see <a href="#contact">Contact</a>).
+        </p>
+        <p>
+          <strong>Subject:</strong> <code>SiteCat Data Deletion Request</code><br>
+          Please include the email address associated with your SiteCat account. We will confirm deletion by reply.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy -->
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p style="color:#666; font-size:0.9rem;"><em>Last Updated: March 29, 2026 (updated for service termination)</em></p>
+
+    <blockquote style="background:#fff3cd; border-left:4px solid #e6a817; padding:12px 16px; margin:16px 0; border-radius:4px; color:#856404;">
+      <strong>Notice:</strong> SiteCat has been discontinued as of March 29, 2026.
+      All user data will be permanently deleted by <strong>May 31, 2026</strong>.
+      To request early deletion, see the <a href="#contact">Contact</a> section below.
+    </blockquote>
+
+    <h3>Introduction</h3>
+    <p>SiteCat ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collected, used, and safeguarded your information while you used our mobile application.</p>
+
+    <h3>Information We Collected</h3>
+    <p><strong>Information You Provided</strong></p>
+    <ul>
+      <li><strong>Account Information:</strong> Email address and name when you signed in with Google</li>
+      <li><strong>Website Data:</strong> URLs and configuration of websites you chose to monitor</li>
+      <li><strong>Monitoring Results:</strong> Status check results and link scan data</li>
+    </ul>
+    <p><strong>Automatically Collected Information</strong></p>
+    <ul>
+      <li><strong>Device Information:</strong> Device type, operating system version</li>
+      <li><strong>Authentication Data:</strong> Google Sign-In tokens (managed by Firebase Authentication)</li>
+    </ul>
+
+    <h3>How We Used Your Information</h3>
+    <ul>
+      <li><strong>Service Provision:</strong> Monitoring websites and detecting broken links</li>
+      <li><strong>Account Management:</strong> User authentication and data synchronization</li>
+      <li><strong>Security:</strong> Protecting against unauthorized access</li>
+    </ul>
+
+    <h3>Data Storage and Security</h3>
+    <p>Your data was stored in <strong>Google Cloud Firestore</strong> (Google Cloud Platform, <code>us-central1</code>). Data is encrypted in transit and at rest using industry-standard security measures.</p>
+    <p>All user data (account data, monitoring history, scan results) will be permanently deleted by <strong>May 31, 2026</strong> following service termination.</p>
+
+    <h3>Third-Party Services</h3>
+    <p>Firebase (Google Cloud) was used for authentication and data storage. These services are governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+    <h3>Data Sharing</h3>
+    <p>We did <strong>not</strong> sell your personal information, share your data with advertisers, or use your data for marketing purposes. Information may have been shared only when required by law.</p>
+
+    <h3>Your Rights</h3>
+    <p>You have the right to request deletion of your personal data. If you are in the European Economic Area (EEA), you have additional rights under GDPR (access, rectification, erasure, restriction, portability, and objection). To exercise these rights, contact us at the address below.</p>
+
+    <h3>Children's Privacy</h3>
+    <p>SiteCat was not intended for users under 13 years of age. We did not knowingly collect information from children.</p>
+
+    <p style="color:#666; font-size:0.9rem;"><em>Original Effective Date: November 21, 2025 &nbsp;/&nbsp; Last Updated: March 29, 2026</em></p>
+  </section>
+
+  <!-- Terms of Service -->
+  <section id="terms">
+    <h2>利用規約 <span class="en">/ Terms of Service</span></h2>
+    <p>
+      SiteCat はサービスを終了したため、利用規約は現在適用されていません。
+      サービス提供期間中（2025年11月21日〜2026年3月29日）に適用されていた利用規約の全文は以下をご参照ください。<br>
+      <em>As SiteCat has been discontinued, the Terms of Service are no longer in effect. The full text that applied during the service period is available below.</em>
+    </p>
+
+    <details>
+      <summary>Terms of Service — Full Text (November 21, 2025)</summary>
+      <div class="details-body">
+
+        <h3>1. Acceptance of Terms</h3>
+        <p>By downloading, installing, or using SiteCat mobile application ("the App"), you agreed to be bound by these Terms of Service ("Terms"). If you did not agree to these Terms, you were not to use the App.</p>
+
+        <h3>2. Description of Service</h3>
+        <p>SiteCat provided: website uptime monitoring, broken link detection, multi-site management, and cloud data synchronization. The service was provided on an "as-is" and "as-available" basis.</p>
+
+        <h3>3. User Account</h3>
+        <p><strong>3.1 Account Creation:</strong> Users were required to create an account using Google Sign-In, provide accurate information, maintain account security, and be at least 13 years of age.</p>
+        <p><strong>3.2 Account Responsibility:</strong> Users were responsible for all activities under their account and were required to notify us immediately of any unauthorized access.</p>
+
+        <h3>4. Acceptable Use</h3>
+        <p><strong>Permitted:</strong> Monitoring websites you owned or had permission to monitor; detecting broken links on authorized websites; managing monitoring configurations.</p>
+        <p><strong>Prohibited:</strong> Monitoring websites without authorization; attempting to overload or attack monitored websites; illegal use; reverse engineering the App; sharing accounts; using automated tools to access the App; collecting data from other users.</p>
+
+        <h3>5. Service Limitations</h3>
+        <p>We strived for 99.9% uptime but did not guarantee continuous availability. Scheduled maintenance may have caused temporary interruptions.</p>
+
+        <h3>6. Data and Privacy</h3>
+        <p>Users retained ownership of their monitoring data. Our use of data was governed by our Privacy Policy. Data was stored securely on Google Cloud Platform.</p>
+
+        <h3>7. Intellectual Property</h3>
+        <p>The SiteCat name, logo, and app design are our property and protected by copyright. Users retained ownership of their monitoring configurations and results.</p>
+
+        <h3>8. Disclaimer of Warranties</h3>
+        <p>THE APP WAS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, INCLUDING accuracy of monitoring results, reliability of link detection, compatibility with all devices, or fitness for a particular purpose.</p>
+
+        <h3>9. Limitation of Liability</h3>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW: We were not liable for any indirect, incidental, or consequential damages. Our total liability did not exceed the amount paid in the past 12 months.</p>
+
+        <h3>10. Indemnification</h3>
+        <p>Users agreed to indemnify and hold us harmless from claims arising from use of the App, violation of these Terms, violation of third-party rights, or monitoring of unauthorized websites.</p>
+
+        <h3>11. Governing Law</h3>
+        <p>These Terms were governed by the laws of Japan. Disputes were to be resolved in the courts of Tokyo, Japan.</p>
+
+        <h3>12. Contact Information</h3>
+        <p><strong>Netplan Matsuyama Ltd.</strong><br>
+        Email: support (at) netplan.co.jp<br>
+        Website: <a href="https://netplan.co.jp/" target="_blank" rel="noopener">https://netplan.co.jp/</a></p>
+
+        <p style="color:#888; font-size:0.85rem; margin-top:20px;"><em>Effective Date: November 21, 2025 — Version 1.0</em></p>
+      </div>
+    </details>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>お問い合わせ <span class="en">/ Contact</span></h2>
+    <div class="contact-box">
+      <p><strong>Netplan Matsuyama Ltd.</strong></p>
+      <p>Email: support (at) netplan.co.jp</p>
+      <p>Website: <a href="https://netplan.co.jp/" target="_blank" rel="noopener">https://netplan.co.jp/</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; Netplan Matsuyama Ltd. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
